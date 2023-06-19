@@ -27,6 +27,31 @@ textarea::placeholder {
   font-weight: bold;
 }
 
+nav .link-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  cursor: pointer;
+}
+nav .link-wrapper p {
+  margin-right: 10px;
+}
+
+nav .link-wrapper p:hover {
+  font-weight: bold;
+}
+
+nav button {
+  padding: 12px;
+  margin: 12px 0;
+  font-family: "Inter", sans-serif;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .note-app__header {
   display: flex;
   align-items: center;
@@ -166,6 +191,62 @@ textarea::placeholder {
 
 .note-item__delete-button:hover {
   color: #b00020;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scaleX(-1);
+  transform: rotate(90deg);
+}
+
+.node {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.value {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 14px;
+  transform: scaleX(-1);
+  transform: rotate(-90deg);
+}
+
+.children {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.addNode {
+  padding: 12px;
+  margin: 12px 0;
+  font-family: "Inter", sans-serif;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addNode:hover {
+  opacity: 0.8;
+}
+
+.node-action {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 180px;
 }
 
 @media only screen and (min-width: 500px) {

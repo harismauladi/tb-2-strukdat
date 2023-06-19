@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../Elments/Card";
 
-function NotesList({ type, data, onDelete, onArchived }) {
+function NotesList({ type, data, onDelete, onArchived, isSearch = false }) {
   return (
     <>
       {data?.length !== 0 ? (
@@ -19,6 +19,7 @@ function NotesList({ type, data, onDelete, onArchived }) {
                 onDelete={onDelete}
                 isArchived={item.archived}
                 onArchived={onArchived}
+                isSearch={isSearch}
               />
             ))}
           </div>
