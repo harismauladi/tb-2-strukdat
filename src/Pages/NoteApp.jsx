@@ -26,10 +26,9 @@ class NoteApp extends React.Component {
   }
 
   addData = ({ title, body }) => {
-    this.bst.addData({ title, body });
     this.setState((prevData) => {
       return {
-        data: [...prevData.data, this.bst.root.data],
+        data: [...prevData.data, this.bst.addData({ title, body })],
       };
     });
   };

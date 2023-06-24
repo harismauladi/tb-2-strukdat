@@ -40,6 +40,7 @@ class BST {
 
     this.root = this.insertNode(this.root, newData);
     this.titleIndex[title] = newData;
+    return newData;
   };
 
   // Fungsi untuk mencari data berdasarkan judul
